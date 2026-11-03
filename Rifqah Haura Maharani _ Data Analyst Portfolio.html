@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rifqah Haura Maharani | Data Analyst Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{--bg:#fff7e6;--ink:#1b1b2f;--mut:#55556b;--card:#ffffff;--y:#ffd84d;--pk:#ff9ccf;--mn:#7be0b8;--bl:#9cc2ff;--or:#ffab6b;--lc:#c9b6ff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px)}
+body{margin:0;color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.6;background:var(--bg);background-image:radial-gradient(circle,rgba(27,27,47,.12) 1.2px,transparent 1.4px);background-size:22px 22px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+a{color:var(--ink);font-weight:800}
+header{position:sticky;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:11;padding:0 12px}
+.nav{max-width:880px;margin:10px auto 0;padding:8px 10px 8px 20px;display:flex;align-items:center;gap:4px;flex-wrap:wrap;background:#fff;border:2.5px solid var(--ink);border-radius:999px;box-shadow:4px 4px 0 var(--ink)}
+.nav strong{margin-right:auto;font-weight:800}
+.nav a{text-decoration:none;font-size:.9rem;padding:5px 12px;border-radius:999px;font-weight:600}
+.nav a:hover{background:var(--y)}
+#lang{border:2.5px solid var(--ink);background:var(--pk);color:var(--ink);border-radius:999px;padding:4px 14px;font:inherit;font-weight:800;font-size:.85rem;cursor:pointer}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:72px 0 0}
+h1{font-size:clamp(2.3rem,6.5vw,4.1rem);line-height:1.05;margin:16px 0;font-weight:800;letter-spacing:-.03em}
+h2{font-size:clamp(1.7rem,4.5vw,2.4rem);margin:0 0 26px;font-weight:800;letter-spacing:-.02em}
+h3{font-size:1.15rem;margin:0 0 4px;font-weight:800;line-height:1.3}
+mark{background:var(--y);color:inherit;padding:0 .18em;border-radius:8px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.live{display:inline-flex;align-items:center;gap:8px;background:var(--mn);border:2.5px solid var(--ink);border-radius:999px;padding:5px 14px;font-size:.88rem;font-weight:800;transform:rotate(-2deg)}
+.live i{width:10px;height:10px;border-radius:50%;background:var(--ink);animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:34px;align-items:center;padding-top:40px}
+.lead{font-size:1.1rem;color:var(--mut);max-width:560px}
+.tags,.btns{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
+.tg{border:2px solid var(--ink);border-radius:999px;padding:3px 14px;font-size:.88rem;font-weight:800;background:var(--bl)}
+.tg:nth-child(2){background:var(--or)}.tg:nth-child(3){background:var(--lc)}.tg:nth-child(4){background:var(--y)}
+.btn{display:inline-block;padding:11px 22px;border-radius:14px;background:var(--pk);color:var(--ink);text-decoration:none;font-weight:800;border:2.5px solid var(--ink);box-shadow:4px 4px 0 var(--ink);transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn.o{background:var(--y)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.tile{border:2.5px solid var(--ink);border-radius:20px;padding:16px;background:var(--bl);box-shadow:5px 5px 0 var(--ink);transform:rotate(-3deg);transition:transform .2s}
+.tile:nth-child(2){background:var(--mn);transform:rotate(2.5deg)}.tile:nth-child(3){background:var(--or);transform:rotate(2deg)}.tile:nth-child(4){background:var(--pk);transform:rotate(-2.5deg)}
+.tile:hover{transform:rotate(0) scale(1.05)}
+.tile b{display:block;font-size:2.2rem;line-height:1.1;font-weight:800}
+.tile span{font-size:.88rem;font-weight:600}
+.marq{margin-top:56px;border-block:2.5px solid var(--ink);background:var(--y);overflow:hidden;white-space:nowrap;transform:rotate(-1deg)}
+.marq div{display:inline-block;padding:10px 0;font-weight:800;letter-spacing:.06em;animation:mq 22s linear infinite}
+.marq span{padding:0 18px}
+@keyframes mq{to{transform:translateX(-50%)}}
+.card{background:var(--card);border:2.5px solid var(--ink);border-radius:22px;padding:26px;margin-bottom:26px;box-shadow:6px 6px 0 var(--ink);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translate(-2px,-2px) rotate(0);box-shadow:9px 9px 0 var(--ink)}
+.kicker{display:inline-block;background:var(--lc);border:2px solid var(--ink);border-radius:999px;padding:2px 12px;font-size:.8rem;font-weight:800;margin-bottom:10px;transform:rotate(-2deg)}
+.tag{color:var(--mut);font-size:.92rem;margin:0 0 12px;font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin:18px 0}
+.stat{border:2px solid var(--ink);border-radius:16px;padding:12px 14px;background:var(--bl)}
+.stat:nth-child(2){background:var(--mn)}.stat:nth-child(3){background:var(--or)}
+.stat b{display:block;font-size:2rem;line-height:1.1;font-weight:800}
+.stat span{font-size:.88rem;font-weight:600}
+.bars{margin:20px 0}
+.bar{display:grid;grid-template-columns:92px 1fr 42px;align-items:center;gap:10px;margin:10px 0;font-size:.92rem;font-weight:800}
+.track{background:#fff;border:2px solid var(--ink);border-radius:99px;height:20px;overflow:hidden}
+.track i{display:block;height:100%;width:0;background:var(--bl);border-right:2px solid var(--ink);transition:width 1.1s cubic-bezier(.2,.9,.3,1.2)}
+.track i.hi{background:var(--pk)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
+.grid2 .card{margin:0}
+ul{padding-left:20px;margin:8px 0}
+.when{color:var(--mut);font-size:.92rem;margin:0 0 6px;font-weight:600}
+.tl{border-left:3px dashed var(--ink);margin-left:8px;padding-left:26px}
+.tl .card{position:relative}
+.tl .card::before{content:"";position:absolute;left:-42px;top:28px;width:18px;height:18px;border-radius:50%;background:var(--pk);border:2.5px solid var(--ink)}
+.cta{border:2.5px solid var(--ink);border-radius:28px;padding:40px 24px;text-align:center;background:var(--lc);box-shadow:8px 8px 0 var(--ink)}
+.cta .btns{justify-content:center}
+footer{margin-top:72px;padding:24px 20px;text-align:center;font-size:.92rem;font-weight:600}
+.rv{opacity:0;transform:translateY(26px) rotate(0);transition:opacity .5s,transform .5s}
+.rv.on{opacity:1;transform:none}
+@media(min-width:721px){main article.card:nth-of-type(odd){rotate:-.6deg}main article.card:nth-of-type(even){rotate:.6deg}}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.nav{border-radius:24px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<strong>Rifqah ✨</strong>
+<a href="#projects" data-id="Proyek">Projects</a><a href="#research" data-id="Riset">Research</a><a href="#skills" data-id="Skill">Skills</a><a href="#experience" data-id="Perjalanan">Journey</a><a href="#contact" data-id="Sapa aku">Say hi</a>
+<button id="lang" type="button" aria-label="Switch language">ID</button>
+</div></header>
+
+<main class="wrap">
+<section id="top" class="hero">
+<div>
+<span class="live"><i></i><span data-id="Lagi cari kerja: Data Analyst entry-level">Open to work: entry-level Data Analyst</span></span>
+<h1 data-id="Hai, aku Rifqah 👋<br>Aku ngubah <mark>data berantakan</mark> jadi keputusan yang jelas.">Hey, I’m Rifqah 👋<br>I turn <mark>messy data</mark> into clear decisions.</h1>
+<p class="lead" data-id="Fresh graduate Sistem Informasi (Universitas Esa Unggul, IPK 3,90) dengan sertifikat BNSP Analisis Data. Senjataku: Power BI, SQL, dan Excel.">Fresh Information Systems grad (Universitas Esa Unggul, GPA 3.90) with a BNSP Data Analysis certificate. My toolkit: Power BI, SQL, and Excel.</p>
+<div class="tags"><span class="tg">Power BI</span><span class="tg">SQL</span><span class="tg">Excel</span><span class="tg" data-id="BNSP tersertifikasi">BNSP certified</span></div>
+<div class="btns"><a class="btn" href="#projects" data-id="Lihat karyaku ✨">See my work ✨</a><a class="btn o" href="#contact" data-id="Sapa aku 💌">Say hi 💌</a></div>
+</div>
+<div class="tiles">
+<div class="tile"><b>24%</b><span data-id="churn tertinggi yang kutemukan (Regional 3)">highest churn I found (Regional 3)</span></div>
+<div class="tile"><b>7 KPIs</b><span data-id="dalam satu dashboard 4 halaman">in one 4-page dashboard</span></div>
+<div class="tile"><b>5,000</b><span data-id="baris data ISP">rows of ISP data</span></div>
+<div class="tile"><b>3rd</b><span data-id="juara 3 capstone RevoU">place, RevoU capstone</span></div>
+</div>
+</section>
+
+<div class="marq" aria-hidden="true"><div><span>DATA ANALYST ✦ POWER BI ✦ SQL ✦ EXCEL ✦ BNSP CERTIFIED ✦</span><span>DATA ANALYST ✦ POWER BI ✦ SQL ✦ EXCEL ✦ BNSP CERTIFIED ✦</span><span>DATA ANALYST ✦ POWER BI ✦ SQL ✦ EXCEL ✦ BNSP CERTIFIED ✦</span><span>DATA ANALYST ✦ POWER BI ✦ SQL ✦ EXCEL ✦ BNSP CERTIFIED ✦</span></div></div>
+
+<section id="projects">
+<h2 data-id="📊 Yang sudah kubuat">📊 Things I built</h2>
+<article class="card rv">
+<span class="kicker" data-id="Tugas akhir">Final project</span>
+<h3>ISP Customer Churn Dashboard</h3>
+<p class="tag">Power BI · SQL · Power Query</p>
+<p data-id="Sebuah ISP mencatat instalasi dan dismantle di Excel, dan analisisnya lama banget. Jadi aku bangun database-nya pakai SQL dan Power Query, lalu bikin dashboard Power BI 4 halaman dengan 7 KPI dari 5.000 baris data pelanggan, untuk Head of Operations dan Head of Affco.">An ISP tracked installs and dismantles in Excel, and analyzing it took forever. So I built the database with SQL and Power Query, then made a 4-page Power BI dashboard with 7 KPIs on 5,000 rows of customer data, for the Head of Operations and Head of Affco.</p>
+<div class="stats">
+<div class="stat"><b>19%</b><span data-id="churn keseluruhan (670 dari 3.552 instalasi)">overall churn (670 of 3,552 installations)</span></div>
+<div class="stat"><b>24%</b><span data-id="churn di Regional 3, yang tertinggi">churn in Regional 3, the highest</span></div>
+<div class="stat"><b>64%</b><span data-id="instalasi datang dari Regional 1">of installations came from Regional 1</span></div>
+</div>
+<div class="bars" role="img" aria-label="Churn rate by region: Regional 1 18%, Regional 2 20%, Regional 3 24%">
+<div class="bar"><span>Regional 1</span><div class="track"><i data-w="60"></i></div><b>18%</b></div>
+<div class="bar"><span>Regional 2</span><div class="track"><i data-w="67"></i></div><b>20%</b></div>
+<div class="bar"><span>Regional 3</span><div class="track"><i class="hi" data-w="80"></i></div><b>24%</b></div>
+</div>
+<p data-id="Plot twist: Regional 3 punya churn tertinggi padahal instalasinya paling sedikit (468). Di situlah upaya retensi sebaiknya dimulai. Oh ya, Selasa hari instalasi tersibuk, lebih dari 3x Senin atau Minggu.">Plot twist: Regional 3 had the highest churn even with the lowest installs (468). That’s where retention efforts should start. Also, Tuesday is the busiest install day, over 3x Monday or Sunday.</p>
+</article>
+
+<article class="card rv">
+<span class="kicker" data-id="Capstone RevoU">RevoU capstone</span>
+<h3>Melbourne Property Sales Analysis</h3>
+<p class="tag">Excel · BigQuery · Power BI</p>
+<p data-id="Proyek tim soal penjualan properti Melbourne yang naik-turun (dataset Kaggle dari RevoU). Aku pegang analisis dan visualisasi, dari bersihin data sampai rekomendasi: promo bertarget di suburb teratas dan program uang muka untuk pembeli pertama.">Team project on Melbourne property sales that kept going up and down (Kaggle dataset from RevoU). I did the analysis and visuals, from cleaning data to recommendations: targeted promos in top suburbs and deposit programs for first-time buyers.</p>
+<div class="stats">
+<div class="stat"><b>3rd</b><span data-id="peringkat tim di final pitch (Section Merauke, Batch SEP24)">place among teams in the final pitch (Section Merauke, Batch SEP24)</span></div>
+<div class="stat"><b>1,974</b><span data-id="penjualan dengan metode S di Southern Metropolitan, yang terunggul">sales with the S method in Southern Metropolitan, the leading method</span></div>
+<div class="stat"><b>6–10 km</b><span data-id="dari pusat kota, minat pembeli lebih tinggi">from the city center, where buyer interest was higher</span></div>
+</div>
+<p data-id="Suburb dengan pendapatan tertinggi: Brighton, Kew, dan Bentleigh East.">Top revenue suburbs: Brighton, Kew, and Bentleigh East.</p>
+</article>
+</section>
+
+<section id="research">
+<h2 data-id="🧪 Riset">🧪 Research</h2>
+<div class="card rv"><span class="kicker">01</span>
+<h3>Strategic alignment maturity at PT Bee Solution Partner (SAMM)</h3>
+<p class="tag" data-id="Ko-penulis · Jurnal Mandiri IT, Vol. 13 No. 1, Juli 2024">Co-author · Jurnal Mandiri IT, Vol. 13 No. 1, July 2024</p>
+<a href="https://www.ejournal.isha.or.id/index.php/Mandiri/article/view/319/375" data-id="Baca artikelnya →">Read the paper →</a></div>
+<div class="card rv"><span class="kicker">02</span>
+<h3>Predicting diabetes risk with K-Nearest Neighbor on a data warehouse</h3>
+<p class="tag" data-id="Ko-penulis · ETL pada data pasien, lalu prediksi dengan K-NN">Co-author · ETL on patient data, then K-NN prediction</p></div>
+<div class="card rv"><span class="kicker">03</span>
+<h3>Enterprise architecture for ABC Cake Shop using TOGAF ADM</h3>
+<p class="tag" data-id="Makalah riset · desain proses bisnis, cetak biru sistem terintegrasi, dan rencana implementasi">Research paper · business process design, integrated system blueprint, and implementation plan</p></div>
+</section>
+
+<section id="skills">
+<h2 data-id="🧰 Toolkit dan sertifikat">🧰 Toolkit and badges</h2>
+<div class="grid2">
+<div class="card rv"><h3>Tools</h3><ul>
+<li><b>Power BI:</b> <span data-id="desain dashboard, DAX">dashboard design, DAX</span></li>
+<li><b>SQL:</b> SQL Server Management Studio, BigQuery</li>
+<li><b>Power Query, Excel:</b> VLOOKUP, HLOOKUP, XLOOKUP, <span data-id="fungsi tanggal, merge">date functions, merge</span></li></ul></div>
+<div class="card rv"><h3 data-id="Sertifikat">Certifications</h3><ul>
+<li><b>BNSP:</b> <span data-id="Analisis Data (Excel, SQL, Power BI), 2026–2029">Data Analysis (Excel, SQL, Power BI), 2026–2029</span></li>
+<li><b>RevoU Tech Academy:</b> Data Analytics and Gen AI, 2024</li>
+<li><b>TOEFL PBT</b> <span data-id="(prediksi): skor 527">(prediction): score 527</span></li></ul></div>
+</div>
+<p class="when" style="margin-top:18px" data-id="🎓 S1 Sistem Informasi, Universitas Esa Unggul, IPK 3,90/4,00 (2022–2026)">🎓 Bachelor of Information Systems, Universitas Esa Unggul, GPA 3.90/4.00 (2022–2026)</p>
+</section>
+
+<section id="experience">
+<h2 data-id="💼 Perjalananku sejauh ini">💼 My journey so far</h2>
+<div class="tl">
+<div class="card rv"><h3>PT POP Net Indonesia, Admin</h3><p class="when">Aug 2025 – Jan 2026</p>
+<p data-id="Menginput hingga 20 dokumen operasional per hari ke sistem ERP, memindahkan data berbasis Excel ke Power BI, dan memantau dokumen sampai tahap finance.">Entered up to 20 operational documents a day into the ERP system, moved Excel-based data into Power BI, and tracked documents through to finance.</p></div>
+<div class="card rv"><h3 data-id="Dewan Perwakilan Mahasiswa (DPM), Bendahara">Student Representative Council (DPM), Treasurer</h3><p class="when" data-id="Mei 2025 – Nov 2025">May 2025 – Nov 2025</p>
+<p data-id="Mencatat dan melaporkan pemasukan dan pengeluaran organisasi.">Recorded and reported the council’s income and expenses.</p></div>
+<div class="card rv"><h3 data-id="BEM Fakultas Ilmu Komputer, Koordinator Manajemen Risiko">Faculty of Computer Science Executive Board, Risk Management Coordinator</h3><p class="when" data-id="Sep 2024 – Feb 2025">Sep 2024 – Feb 2025</p>
+<p data-id="Menilai risiko terhadap keberlangsungan organisasi dan memastikan kepatuhan terhadap kebijakan.">Assessed risks to the organization’s continuity and checked compliance with policies.</p></div>
+<div class="card rv"><h3>IMFASILKOM · Code Unity</h3><p class="when">2023 – 2024</p>
+<p data-id="Staf pengembangan kader untuk kegiatan penyambutan mahasiswa, dan staf acara untuk coding class dan coding festival.">Cadre development staff for student onboarding events, and event staff for a coding class and coding festival.</p><p><a href="https://drive.google.com/drive/folders/1GVfWGD6KFXOpD6aXmB95bDaKiiH1hlmb" data-id="Lihat sertifikat →">View certificates →</a></p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="cta rv">
+<h2 data-id="💌 Yuk ngobrol!">💌 Let’s chat!</h2>
+<p class="lead" style="margin:0 auto" data-id="Terbuka untuk posisi Data Analyst entry-level. Aku siap jelasin dashboard-ku atau ngerjain tes kasus.">Open to entry-level Data Analyst roles. Happy to walk you through my dashboard or take a case test.</p>
+<div class="btns"><a class="btn" href="mailto:rifqahhm1203@gmail.com">rifqahhm1203@gmail.com</a><a class="btn o" href="https://www.linkedin.com/in/rifqah-haura-maharani-458a6032b">LinkedIn</a><a class="btn" style="background:var(--mn)" href="https://wa.me/6289634859709">💬 WhatsApp 0896-3485-9709</a></div>
+<p class="when">📍 Bekasi, West Java, Indonesia</p>
+</div>
+</section>
+</main>
+<footer>Made with ☕ and a lot of data · © 2026 Rifqah Haura Maharani</footer>
+
+<script>
+(function(){
+var els=document.querySelectorAll('[data-id]'),btn=document.getElementById('lang'),lang='en';
+els.forEach(function(e){e.setAttribute('data-en',e.innerHTML)});
+function set(l){lang=l;els.forEach(function(e){e.innerHTML=e.getAttribute('data-'+l)});document.documentElement.lang=l;btn.textContent=l==='en'?'ID':'EN';try{localStorage.setItem('lang',l)}catch(x){}}
+var saved=null;try{saved=localStorage.getItem('lang')}catch(x){}
+if((saved||((navigator.language||'').indexOf('id')===0?'id':'en'))==='id')set('id');
+btn.addEventListener('click',function(){set(lang==='en'?'id':'en')});
+var rv=document.querySelectorAll('.rv');
+function show(e){e.classList.add('on');e.querySelectorAll('i[data-w]').forEach(function(b){b.style.width=b.getAttribute('data-w')+'%'})}
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){show(x.target);io.unobserve(x.target)}})},{threshold:.15});rv.forEach(function(e){io.observe(e)})}else{rv.forEach(show)}
+})();
+</script>
+</body>
+</html>
